@@ -89,6 +89,8 @@
     function search(b)
     { 
         var k = document.getElementById("inp").value;
+        if(k!="")
+        {
         switch(b)
         {
             case 1 :var t = "http://www.google.com/search?q="+k.replace(" ","+");
@@ -111,7 +113,7 @@
                     window.location = t; 
                     document.getElementById("inp").value="";           
         }
-        
+        }
     }
     let a = 0;
     function change()
@@ -123,6 +125,7 @@
         let ytp = document.getElementById("yt");
         let amp = document.getElementById("am");
         let flip = document.getElementById("flip");
+        
         if(a == 1)
         {
             for(let i in h)
